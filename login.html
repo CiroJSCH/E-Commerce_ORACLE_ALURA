@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="Imagenes/icono.ico">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/login/login.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/login/form.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="Imagenes/Vector.png" alt="Logo AluraGeek">
+            <p>Alura<span class="geekWord">Geek</span></p>
+        </div>
+        <div class="header__search">
+            <input type="text" class="search-bar" placeholder="¿Qué deseas buscar?">
+            <img src="Imagenes/Lupa.png" alt="Lupa de búsqueda" class="search-icon">
+        </div>
+    </header>
+    <main>
+        <form class="form">
+            <h2 class="form__title">Iniciar sesión</h2>
+            <input type="email" name="email" class="form__email" placeholder="Escriba su correo electrónico" required> 
+            <input type="password" name="password" class="form__password" placeholder="Escriba su contraseña" required>
+            <span id="errorMessage"></span>
+            <button type="submit" class="form__submit">Entrar</button>
+        </form>
+    </main>
+    <footer>
+        <section class="container">
+            <div class="container__contact">
+                <div class="header__logo" id="footer__logo">
+                    <img src="Imagenes/Vector.png" alt="Logo AluraGeek">
+                    <p>Alura<span class="geekWord">Geek</span></p>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__list__link">Quienes Somos</a></li>
+                    <li><a href="#" class="footer__list__link">Política de privacidad</a></li>
+                    <li><a href="#" class="footer__list__link">Programa de fidelidad</a></li>
+                    <li><a href="#" class="footer__list__link">Nuestras tiendas</a></li>
+                    <li><a href="#" class="footer__list__link">Quiero ser franquiciado</a></li>
+                    <li><a href="#" class="footer__list__link">Anúncie aquí</a></li>
+                </ul>
+            </div>
+            <form class="footer__form">
+                <h3 class="footer__form_title">Hable con nosotros</h3>
+                <input type="text" name="name" class="footer__form__name" placeholder="Nombre">
+                <textarea name="message" class="footer__form__message" rows="10" placeholder="Escriba su mensaje"></textarea>
+                <button type="submit" class="footer__form__submit">Enviar mensaje</button>
+            </form>
+        </section>
+        <div class="developedBy">
+            <p>Desarrollado por Ciro Schapert</p>
+            <p>2022</p>
+        </div>
+    </footer>
+    <script src="assets/login/login.js"></script>
+    <script src="assets/footer/footer.js"></script>
+</body>
+</html>

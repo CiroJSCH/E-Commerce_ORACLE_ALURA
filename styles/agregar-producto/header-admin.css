@@ -1,0 +1,21 @@
+.header__admin{
+    font-family: var(--fuente);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--colorAzul);
+    color: var(--colorAzul);
+}
+
+@media screen and (min-width:0) {
+    .header__admin{
+        padding: 0.7rem;
+    }
+}
+
+@media screen and (min-width:727px) {
+    .header__admin{
+        padding: 1rem;
+    }
+}

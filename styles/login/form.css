@@ -1,0 +1,53 @@
+main{
+    width: 100vw;
+    height: auto;
+    background-color: #E5E5E5;
+    padding-bottom: 5rem;
+}
+
+.form {
+    padding-top: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form__title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1.4rem;
+}
+
+.form__email, .form__password {
+    height: 2rem;
+    margin-bottom: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+}
+
+.form__email:focus, .form__password:focus{
+    border: 2px solid var(--colorAzul);
+    outline: none;
+}
+
+.form__submit{
+    height: calc(2rem + 20px);
+    background-color: var(--colorAzul);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.form__submit:hover{
+    transition: .5s all;
+    background-color: darkblue;
+    cursor: pointer;
+}

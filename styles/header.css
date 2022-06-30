@@ -1,0 +1,133 @@
+.header{
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    width: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.header__logo p {
+    margin-left: .5rem;
+    font-weight: bolder;
+    color: var(--colorAzul);
+}
+
+.header__logo .geekWord{
+    color: #464646;
+}
+
+.header__search {
+    border-radius: 15px;
+    padding: .7rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    background-color: transparent;
+    border: none;
+}
+
+.search-bar:focus {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.search-icon:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width:0) {
+
+    /*Header part*/
+    .header{
+        width: 100vw;
+        height: auto;
+        padding: 1.5rem 0 1.5rem 0;
+    }
+
+    .header__search{
+        background-color: transparent;
+        width: auto;
+        justify-content: space-around;
+        order: 2; 
+    }
+
+    .search-bar{
+        display: none;
+        width: 55%;
+    }
+}
+
+@media screen and (min-width:280px) {
+    .header{
+        flex-direction: column;
+    }
+    .header__search{
+        order: 0; 
+    }
+}
+
+@media screen and (min-width:370px) {
+    .header{
+        flex-direction: row;
+        padding: 1.5rem .5rem 1.5rem .5rem;
+    }
+    .header__search{
+        order: 1; 
+    }
+}
+
+@media screen and (min-width:728px) {
+
+    /*Header part*/
+    .header{
+        width: 70vw;
+        padding: 2rem;
+        flex-direction: row;
+    }
+
+    .header__search{
+        background-color: #F5F5F5;
+        width: 30%;
+        order: 0;
+    }
+
+    .search-bar{
+        display: inline-block;
+        justify-content: space-between;
+        width: 85%;
+        
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    /*Header part*/
+    .header{
+        width: 70vw;
+        padding: 2rem;
+        flex-direction: row;
+    }
+
+    .header__search{
+        background-color: #F5F5F5;
+        width: 20%;
+    }
+
+    .search-bar{
+        display: inline-block;
+        justify-content: space-between;
+        width: 85%;
+        
+    }
+}

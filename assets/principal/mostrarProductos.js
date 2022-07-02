@@ -46,7 +46,7 @@ for (let i=0; i<categorias.length; i++){
         categoriaProduct.appendChild(productElement)
     
         const modificarImagen = document.getElementById(`elemento${i}`);
-        modificarImagen.setAttribute("style", `background: url('../../Imagenes/${productosMain[i].imagen}') no-repeat center / cover`);
+        modificarImagen.setAttribute("style", `background: url('E-Commerce_ORACLE_ALURA../../Imagenes/${productosMain[i].imagen}') no-repeat center / cover`);
         
     }
 

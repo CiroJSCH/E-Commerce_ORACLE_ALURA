@@ -6,6 +6,7 @@ const user = {
 const email = document.querySelector('.form__email');
 const password = document.querySelector('.form__password');
 const submit = document.querySelector('.form__submit');
+const link = document.querySelector('.submit__link');
 const error = document.querySelector('#errorMessage');
 let attemps = 3;
 
@@ -23,7 +24,7 @@ submit.addEventListener('click', evento=>{
         if (resultMail && resultPass) {
             error.innerHTML = '';
             error.classList.remove('error');
-            location.href="../productos.html";
+            window.location.href = 'productos.html'
         } else {
             error.classList.add('error');
             error.innerHTML = '';

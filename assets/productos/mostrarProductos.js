@@ -26,7 +26,7 @@ for (let i=0; i<productos.length; i++){
     deleteIcon.addEventListener('click', event=>deleteProduct(event));
 
     const modificarImagen = document.getElementById(`elemento${i}`);
-    modificarImagen.setAttribute("style", `background: url('../../Imagenes/${productos[i].imagen}') no-repeat center / cover`);
+    modificarImagen.setAttribute("style", `background: url('E-Commerce_ORACLE_ALURA../../Imagenes/${productos[i].imagen}') no-repeat center / cover`);
                                                     
 }
 

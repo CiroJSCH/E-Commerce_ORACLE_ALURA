@@ -1,0 +1,107 @@
+main{
+    width: 100vw;
+    height: auto;
+}
+
+.banner{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background: url('../../Imagenes/banner.png') no-repeat center / cover;
+    padding-bottom: 3rem;
+}
+
+.banner__container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: var(--fuente);
+    color: white;
+    padding-top: 9.375rem;
+}
+
+.banner__container__title{
+    font-weight: bolder;
+    text-shadow: 2px 0px 6px black;
+    padding-bottom: 1.3rem;
+}
+
+.banner__container__description{
+    font-weight: 700;
+    padding-bottom: 1.3rem;
+}
+
+.banner__container__button{
+    background-color: var(--colorAzul);
+    border: none;
+    color: white;
+    height: 3.1875rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.banner__container__button:hover{
+    transition: .5s all;
+    cursor: pointer;
+    background-color: white;
+    color: var(--colorAzul);
+    border: 1px solid var(--colorAzul);
+}
+
+@media screen and (min-width:0) {
+    .banner__container{
+        width: 95%;
+    }
+    .banner__container__title{
+        font-size: 2.5rem;
+    }
+    .banner__container__description{
+        font-size: 1.094rem;
+    }
+    .banner__container__button{
+        width: 40%;
+    }
+}
+
+@media screen and (width:280px) {
+    .banner__container__button{
+        height: auto;
+    }
+}
+
+@media screen and (min-width:727px) {
+    .banner__container{
+        width: 85%;
+    }
+    .banner__container__title{
+        font-size: 2.9rem;
+    }
+    .banner__container__description{
+        font-size: 1.2rem;
+    }
+    .banner__container__button{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:922px) {
+    .banner__container{
+        width: 70%;
+    }
+    .banner__container__title{
+        font-size: 3.8125rem;
+    }
+    .banner__container__description{
+        font-size: 1.375rem;
+    }
+    .banner__container__button{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .banner__container__button{
+        width: 15%;
+    }
+}
+

@@ -4,126 +4,126 @@ const productosMain = [
 
     {
         'nombre' : 'Producto XYZ',
-        'imagen' : 'starWars/cascoStorm.png',
+        'imagen' : 'cascoStorm.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Producto XYZ',
-        'imagen' : 'starWars/cascoDarth.png',
+        'imagen' : 'cascoDarth.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Producto XYZ',
-        'imagen' : 'starWars/yoda.png',
+        'imagen' : 'yoda.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Producto XYZ',
-        'imagen' : 'starWars/muñecoStorm.png',
+        'imagen' : 'muñecoStorm.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Producto XYZ',
-        'imagen' : 'starWars/babyYoda.png',
+        'imagen' : 'babyYoda.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Producto XYZ',
-        'imagen' : 'starWars/negro.png',
+        'imagen' : 'negro.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Control XYZ',
-        'imagen' : 'Consolas/mando.png',
+        'imagen' : 'mando.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Control y consola XYZ',
-        'imagen' : 'Consolas/play.png',
+        'imagen' : 'play.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Control XYZ',
-        'imagen' : 'Consolas/nintendo.png',
+        'imagen' : 'nintendo.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Control XYZ',
-        'imagen' : 'Consolas/ninSwitch.png',
+        'imagen' : 'ninSwitch.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Control XYZ',
-        'imagen' : 'Consolas/xbox.png',
+        'imagen' : 'xbox.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Game Boy Color',
-        'imagen' : 'Consolas/gameboy.png',
+        'imagen' : 'gameboy.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Camisa Atari',
-        'imagen' : 'Diversos/ataria.png',
+        'imagen' : 'ataria.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Camisa SNES',
-        'imagen' : 'Diversos/SNES.png',
+        'imagen' : 'SNES.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Producto XYZ',
-        'imagen' : 'Diversos/sonic.png',
+        'imagen' : 'sonic.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Control y Conzola XYZ',
-        'imagen' : 'Diversos/reloj.png',
+        'imagen' : 'reloj.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Control y Conzola XYZ',
-        'imagen' : 'Diversos/humano.png',
+        'imagen' : 'humano.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     },
 
     {
         'nombre' : 'Producto XYZ',
-        'imagen' : 'Diversos/pikachu.png',
+        'imagen' : 'pikachu.png',
         'precio' : '$ 60, 00',
         'codigo' : 'Ver producto'
     }

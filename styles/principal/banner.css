@@ -1,6 +1,7 @@
 main{
     width: 100vw;
     height: auto;
+    background-color: var(--colorFondo);
 }
 
 .banner{

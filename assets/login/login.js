@@ -23,7 +23,7 @@ submit.addEventListener('click', evento=>{
         if (resultMail && resultPass) {
             error.innerHTML = '';
             error.classList.remove('error');
-            window.location='../../productos.html';
+            location.href="../productos.html";
         } else {
             error.classList.add('error');
             error.innerHTML = '';

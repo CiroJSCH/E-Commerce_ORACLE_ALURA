@@ -24,7 +24,7 @@ submit.addEventListener('click', evento=>{
         if (resultMail && resultPass) {
             error.innerHTML = '';
             error.classList.remove('error');
-            window.location.href = 'productos.html'
+            window.location.href = '../screens/productos.html';
         } else {
             error.classList.add('error');
             error.innerHTML = '';
@@ -36,7 +36,7 @@ submit.addEventListener('click', evento=>{
                 submit.classList.add('disable');
             }
         }
-    
+        
         email.value = '';
         password.value = '';
 

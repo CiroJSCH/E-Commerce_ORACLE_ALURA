@@ -1,34 +1,24 @@
-import { productos } from "./productos.js";
-import { deleteProduct } from "./eliminarProducto.js";
-import { redirect } from "./redireccionar.js";
+import { crearProducto } from "./crearItem.js";
+import { eliminarProducto } from "./eliminarProducto.js";
+import { effectDelete } from "./eliminarProducto.js";
 
-const sectionProducts = document.querySelector('.products');
+const sectionProductos = document.querySelector('.products');
+const listaProductos = () => fetch('http://localhost:3000/productos').then(respuesta => respuesta.json());
 
-for (let i=0; i<productos.length; i++){
+listaProductos().then(productos=> {
+    productos.forEach(producto => {
+        const product = document.createElement('div');
+        product.classList.add('products__element');
+        product.innerHTML = crearProducto(producto);
+        sectionProductos.appendChild(product);
+        const trashIcon = document.getElementById(`${producto.id}`)
+        trashIcon.addEventListener('click', (event)=>{
+            effectDelete(event)
+            eliminarProducto(producto.id);
+        });
+    });
+})
 
-    const product = document.createElement('div');
-    product.classList.add('products__element');
 
-    product.innerHTML = `
-    <span class="products__element_image" id="elemento${i}">
-        <i class="fa-solid fa-trash" id="trash${i}"></i>
-        <i class="fa-solid fa-pencil"></i>
-    </span>
-    <div class="products__element_inf">
-        <h3 class="element_inf_name">${productos[i].nombre}</h3>
-        <p class="element_inf_price">${productos[i].precio}</p>
-        <p class="element_inf_code">${productos[i].codigo}</p>
-    </div>
-    `
-    sectionProducts.appendChild(product)
 
-    const deleteIcon = document.getElementById(`trash${i}`);
-    deleteIcon.addEventListener('click', event=>deleteProduct(event));
-
-    const modificarImagen = document.getElementById(`elemento${i}`);
-    modificarImagen.setAttribute("style", `background: url('E-Commerce_ORACLE_ALURA../../Imagenes/${productos[i].imagen}') no-repeat center / cover`);
-                                                    
-}
-
-redirect();
 

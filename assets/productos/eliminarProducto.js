@@ -1,6 +1,10 @@
-export {deleteProduct}
+export const eliminarProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`, {
+      method: "DELETE"
+    })
+  }
 
-const deleteProduct = (event)=>{
+export const effectDelete = (event)=>{
     const product = event.composedPath()[2];
     product.classList.add ('desvanecer');
             setTimeout (function () {

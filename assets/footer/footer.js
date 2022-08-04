@@ -6,17 +6,17 @@ const inputs = [footerName, footerText];
 
 footerButton.addEventListener('click', e=>{
     e.preventDefault();
-    console.log(inputs)
     inputs.forEach(input=>{
         if(input.validity["valueMissing"]){
-            input.classList.add('errorInput');
-            errores.classList.add('error');
-            errores.innerHTML = 'No puede haber campos vacíos'
+            errores.classList.remove('noErrorFoot');
+            errores.innerHTML = 'El campo no puede estar vacío';
+            errores.classList.add('errorFoot');
+            input.classList.add('errorFootInput');
         } else {
-            input.classList.remove('errorInput');
-            errores.classList.remove('error');
-            errores.innerHTML = '';
+            errores.innerHTML = 'Mensaje enviado';
+            errores.classList.add('noErrorFoot');
+            input.classList.remove('errorFootInput');
+            input.value = '';
         }
     })
 })
-

@@ -64,8 +64,9 @@
             </div>
             <form class="footer__form">
                 <h3 class="footer__form_title">Hable con nosotros</h3>
-                <input type="text" name="name" class="footer__form__name" placeholder="Nombre">
-                <textarea name="message" class="footer__form__message" rows="10" placeholder="Escriba su mensaje"></textarea>
+                <input type="text" name="name" class="footer__form__name" placeholder="Nombre" required>
+                <textarea name="message" class="footer__form__message" rows="10" placeholder="Escriba su mensaje" required></textarea>
+                <span id="errores"></span>
                 <button type="submit" class="footer__form__submit">Enviar mensaje</button>
             </form>
         </section>

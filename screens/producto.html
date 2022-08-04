@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Producto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="Imagenes/icono.ico">
+    <link rel="stylesheet" href="/E-Commerce_ORACLE_ALURA/styles/reset.css"">
+    <link rel="stylesheet" href="/E-Commerce_ORACLE_ALURA/styles/header.css">
+    <link rel="stylesheet" href="../styles/producto/producto.css">
+    <link rel="stylesheet" href="/E-Commerce_ORACLE_ALURA/styles/principal/header-main.css">
+    <link rel="stylesheet" href="/E-Commerce_ORACLE_ALURA/styles/footer.css">
+    <link rel="stylesheet" href="/E-Commerce_ORACLE_ALURA/styles/styles.css">
+    <script src="https://kit.fontawesome.com/8271c3555b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../Imagenes/Vector.png" alt="Logo AluraGeek">
+            <p>Alura<span class="geekWord">Geek</span></p>
+        </div>
+        <a href="login.html" class="login_link"><button class="header__login">Login</button></a>
+    </header>
+    <main>
+        <section class="container">
+            <div class="productoImg">       
+            </div>
+            <section class="information">
+                <h2 class="information__title">Producto XYZ</h2>
+                <h4 class="information__price">$ 60.00</h4>
+                <p class="information__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui error, aperiam nihil deleniti velit et illum accusantium laudantium provident facere temporibus. Porro nisi debitis provident earum nemo? Soluta, debitis?</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="container">
+            <div class="container__contact">
+                <div class="header__logo" id="footer__logo">
+                    <img src="../Imagenes/Vector.png" alt="Logo AluraGeek">
+                    <p>Alura<span class="geekWord">Geek</span></p>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__list__link">Quienes Somos</a></li>
+                    <li><a href="#" class="footer__list__link">Política de privacidad</a></li>
+                    <li><a href="#" class="footer__list__link">Programa de fidelidad</a></li>
+                    <li><a href="#" class="footer__list__link">Nuestras tiendas</a></li>
+                    <li><a href="#" class="footer__list__link">Quiero ser franquiciado</a></li>
+                    <li><a href="#" class="footer__list__link">Anúncie aquí</a></li>
+                </ul>
+            </div>
+            <form class="footer__form">
+                <h3 class="footer__form_title">Hable con nosotros</h3>
+                <input type="text" name="name" class="footer__form__name" placeholder="Nombre">
+                <textarea name="message" class="footer__form__message" rows="10" placeholder="Escriba su mensaje"></textarea>
+                <button type="submit" class="footer__form__submit">Enviar mensaje</button>
+            </form>
+        </section>
+        <div class="developedBy">
+            <p>Desarrollado por Ciro Schapert</p>
+            <p>2022</p>
+        </div>
+    </footer>
+    <script src="../assets/footer/footer.js"></script>
+    <script src="../assets/producto/verProducto.js"></script>
+</body>
+</html>

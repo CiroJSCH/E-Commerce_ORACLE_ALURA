@@ -5,3 +5,7 @@
     --colorTitulos: #464646;
     --colorSearch: #F5F5F5;
 }
+
+html{
+    overflow-x: hidden;
+}

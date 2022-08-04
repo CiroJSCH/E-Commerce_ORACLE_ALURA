@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .products{
     margin: 0 auto;
     width: 70%;
@@ -12,6 +16,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .categoria__head{
@@ -51,17 +56,20 @@
     font-weight: bold;
 }
 
-.element_inf_see:hover{
-    transition: .5s all;
-    cursor: pointer;
-    color: darkblue;
-}
-
-.categoria__product{
+.categoria__products{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.products__element{
+    background-color: #dcdcdc;
+}
+
+.products__element:hover{
+    background-color: #d6d6d6;
+}
+
 
 @media screen and (min-width:0) {
     .head__all{

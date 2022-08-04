@@ -1,7 +1,11 @@
 .error{
     color: red;
     font-size: 1rem;
-    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.errorInput{
+    background-color: lightcoral;
 }
 
 .disable{

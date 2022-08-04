@@ -1,5 +1,4 @@
-export {productosMain}
-
+//De repuesto para tener los datos
 const productosMain = [
 
     {

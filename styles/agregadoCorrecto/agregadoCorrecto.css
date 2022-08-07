@@ -1,0 +1,44 @@
+.main {
+  background-color: var(--colorFondo);
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.success__img {
+  width: 15rem;
+  height: 15rem;
+  background: url(checkmark.svg) no-repeat center  / cover;
+}
+
+.success__title {
+  font-size: 3rem;
+  font-family: var(--fuente);
+  font-weight: bold;
+}
+
+.success__button  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 4rem;
+  background-color: var(--colorAzul);
+  color: white;
+  font-family: var(--fuente);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.success__button:hover{
+  background-color: darkblue;
+  transition: .5s background;
+}

@@ -6,14 +6,15 @@ const productDescription = document.querySelector('.information__description');
 const url = new URL(window.location);
 const id = url.searchParams.get("id");
 
-const producto = (id) => fetch(`http://localhost:3000/productos/${id}`).then((response) => response.json());
+const producto = (id) => fetch(`https://62ef11618d7bc7c2eb74befd.mockapi.io/productos/${id}`).then((response) => response.json());
 
 producto(id).then(info=>{
-    modifyData(info.imagen, info.nombre, info.precio);
+    modifyData(info.imagen, info.nombre, info.precio, info.descripcion);
 })
 
-const modifyData = (image, title, price) => {
-    productImage.setAttribute("style", `background: url('../Imagenes/${image}') no-repeat center / cover`);
+const modifyData = (image, title, price, description) => {
+    productImage.setAttribute("style", `background: url('${image}') no-repeat center / cover`);
     productTitle.innerHTML = title;
     productPrice.innerHTML = price;
+    productDescription.innerHTML = description;
 }

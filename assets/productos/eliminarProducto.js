@@ -1,5 +1,5 @@
 export const eliminarProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://62ef11618d7bc7c2eb74befd.mockapi.io/productos/${id}`, {
       method: "DELETE"
     })
   }

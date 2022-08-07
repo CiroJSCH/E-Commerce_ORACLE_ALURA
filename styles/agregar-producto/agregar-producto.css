@@ -51,6 +51,16 @@ main{
     padding: .2rem 0 0 0;
 }
 
+.input-container--invalid{
+    border: 2px solid red;
+}
+
+.input-message-error{
+    color: lightcoral;
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+
 .content__form__input:focus{
     outline: none;
     border-bottom: 1px solid var(--colorAzul);

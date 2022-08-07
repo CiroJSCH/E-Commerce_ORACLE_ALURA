@@ -12,6 +12,7 @@
     flex-direction: column;
     font-family: var(--fuente);
     border: 2px solid lightslategray;
+    margin-bottom: 1rem;
 }
 
 .products__element:hover{
@@ -30,6 +31,7 @@
 .products__element_image i{
     color: white;
     padding: .7rem .7rem 0 .5rem;
+    height: 16px;
 }
 
 .fa-trash:hover{

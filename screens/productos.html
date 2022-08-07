@@ -19,18 +19,12 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <img src="../Imagenes/Vector.png" alt="Logo AluraGeek">
-            <p>Alura<span class="geekWord">Geek</span></p>
-        </div>
-        <div class="header__search">
-            <div class="header__search-main">
-                <input type="text" class="search-bar" placeholder="¿Qué deseas buscar?">
-                <img src="../Imagenes/Lupa.png" alt="Lupa de búsqueda" class="search-icon">
+        <a href="index.html">
+            <div class="header__logo">
+                <img src="../Imagenes/Vector.png" alt="Logo AluraGeek">
+                <p>Alura<span class="geekWord">Geek</span></p>
             </div>
-            <ul class="header__search-results">
-            </ul>
-        </div>
+        </a>
         <a href="login.html" class="header__volver">
             VOLVER
         </a>
@@ -61,8 +55,9 @@
             </div>
             <form class="footer__form">
                 <h3 class="footer__form_title">Hable con nosotros</h3>
-                <input type="text" name="name" class="footer__form__name" placeholder="Nombre" required maxlength="40">
-                <textarea name="message" class="footer__form__message" rows="10" placeholder="Escriba su mensaje" required maxlength="120"></textarea>
+                <input type="text" name="name" class="footer__form__name" placeholder="Nombre" required>
+                <textarea name="message" class="footer__form__message" rows="10" placeholder="Escriba su mensaje" required></textarea>
+                <span id="errores"></span>
                 <button type="submit" class="footer__form__submit">Enviar mensaje</button>
             </form>
         </section>
@@ -74,6 +69,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../assets/productos/mostrarProductos.js" type="module"></script>
     <script src="../assets/footer/footer.js"></script>
-    <script src="../assets/search.js"></script>
 </body>
 </html>
